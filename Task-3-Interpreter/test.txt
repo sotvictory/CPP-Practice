@@ -1,0 +1,28 @@
+program
+{
+	int a = 4, b = 3, c;
+	string str1 = "abc", str2 = "fde";
+	boolean d = false, e = true;
+
+	write(d and e, " ", d or e);
+
+	c = a % b;
+	write(c);
+
+	while (a != b) {
+		a = a - 1;
+	}
+	write(a);
+
+	if ((a == (2 + 1)) or (a % b == c)) {
+		write("if");
+		goto label;
+	} else {
+		write("else", 0);
+	}
+
+	write("no_label");
+
+label:
+	write("true_label");
+}
